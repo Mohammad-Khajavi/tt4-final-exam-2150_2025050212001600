@@ -1,7 +1,3 @@
-# tt4-final-exam-2150_2025050212001600
-
-Fullstack final exam project for TT4-2150 –
-
 # TT4-2150 Final Exam – Contact List Manager
 
 ### PART I – Multiple Choice Questions
