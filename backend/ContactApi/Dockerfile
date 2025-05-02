@@ -1,16 +1,16 @@
-# Use ASP.NET 8 runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
 EXPOSE 80
 
-# Use .NET 8 SDK to build the app
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY . .
+
+COPY ContactApi.csproj .
 RUN dotnet restore
+
+COPY . .
 RUN dotnet publish -c Release -o /app/publish
 
-# Final image
 FROM base AS final
 WORKDIR /app
 COPY --from=build /app/publish .
