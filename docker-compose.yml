@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  backend:
+    build:
+      context: ./backend/ContactApi
+    ports:
+      - "5000:80"
+    volumes:
+      - ./backend/ContactApi:/app
