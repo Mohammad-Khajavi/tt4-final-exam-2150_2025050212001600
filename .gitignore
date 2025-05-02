@@ -1,0 +1,16 @@
+# Ignore Visual Studio temp folders
+.vs/
+*.user
+*.suo
+*.vsidx
+
+# Ignore build output
+bin/
+obj/
+
+# Ignore SQLite database
+contacts.db
+
+# Ignore other common temp
+*.db-shm
+*.db-wal
